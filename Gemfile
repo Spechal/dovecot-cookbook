@@ -24,6 +24,7 @@ end
 group :unit do
   gem 'chef', chef_version unless chef_version.nil?
   gem 'chefspec', '= 7.2.1'
+  gem 'cucumber', '~> 3.1.2'
   gem 'should_not', '~> 1.1.0'
   gem 'simplecov', '~> 0.16.1'
 end

@@ -18,19 +18,19 @@
 #
 
 name 'dovecot'
-maintainer 'Xabier de Zuazo'
-maintainer_email 'xabier@zuazo.org'
+maintainer 'Travis Crowder (originally Xabier de Zuazo)'
+maintainer_email 'spechal@gmail.com'
 license 'Apache-2.0'
 description <<-EOH
 Installs and configures Dovecot, open source IMAP and POP3 email server.
 EOH
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '3.3.0' # WiP
+version '4.0.0'
 
-source_url "https://github.com/zuazo/#{name}-cookbook" if respond_to?(:source_url)
-issues_url "https://github.com/zuazo/#{name}-cookbook/issues" if respond_to?(:issues_url)
+source_url "https://github.com/spechal/#{name}-cookbook" if respond_to?(:source_url)
+issues_url "https://github.com/spechal/#{name}-cookbook/issues" if respond_to?(:issues_url)
 
-chef_version '>= 12' if respond_to?(:chef_version)
+chef_version '>= 14' if respond_to?(:chef_version)
 
 supports 'amazon'
 supports 'centos', '>= 6.7'
